@@ -1,0 +1,1 @@
+if('serviceWorker' in navigator) {window.addEventListener('load', () => {navigator.serviceWorker.register('/Acero_v2/sw.js', { scope: '/Acero_v2/' })})}

@@ -1,12 +1,1 @@
-self.addEventListener('install', event => {
-  console.log('[ServiceWorker] Installed');
-  self.skipWaiting();
-});
-
-self.addEventListener('activate', event => {
-  console.log('[ServiceWorker] Activated');
-});
-
-self.addEventListener('fetch', event => {
-  event.respondWith(fetch(event.request));
-});
+if(!self.define){let e,i={};const n=(n,s)=>(n=new URL(n+".js",s).href,i[n]||new Promise(i=>{if("document"in self){const e=document.createElement("script");e.src=n,e.onload=i,document.head.appendChild(e)}else e=n,importScripts(n),i()}).then(()=>{let e=i[n];if(!e)throw new Error(`Module ${n} didn’t register its module`);return e}));self.define=(s,r)=>{const t=e||("document"in self?document.currentScript.src:"")||location.href;if(i[t])return;let o={};const f=e=>n(e,t),l={module:{uri:t},exports:o,require:f};i[t]=Promise.all(s.map(e=>l[e]||f(e))).then(e=>(r(...e),o))}}define(["./workbox-5ffe50d4"],function(e){"use strict";self.skipWaiting(),e.clientsClaim(),e.precacheAndRoute([{url:"assets/index-BvAnAV4R.css",revision:null},{url:"assets/index-CnxcfCqk.js",revision:null},{url:"index.html",revision:"841b6002a90b6b12eefc8f159be02fe6"},{url:"registerSW.js",revision:"c5f5200bea68903fdeeb76b49989e061"},{url:"Acero512.png",revision:"5bc0b34e8fb1e470d5934c06872e140e"},{url:"manifest.webmanifest",revision:"e9f070f1fed5554cb768d095baed4a9f"}],{}),e.cleanupOutdatedCaches(),e.registerRoute(new e.NavigationRoute(e.createHandlerBoundToURL("index.html")))});
