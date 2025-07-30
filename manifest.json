@@ -7,12 +7,12 @@
   "theme_color": "#4CAF50",
   "icons": [
     {
-      "src": "/Acero_v2/Acero.png",
+      "src": "/Acero.png",
       "sizes": "192x192",
       "type": "image/png"
     },
     {
-      "src": "/Acero_v2/Acero512.png",
+      "src": "/Acero512.png",
       "sizes": "512x512",
       "type": "image/png"
     }
